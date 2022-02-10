@@ -8,7 +8,10 @@ import YouTubeAccountCircle from '@material-ui/icons/YouTube';
 export const SocialMedia = () => {
 
     return (
-        <div className="socialMediaContainer">
+        <div style={{
+            margin: 'auto',
+            width: '50%'
+        }}>
 
             <IconButton
                 edge="end"
@@ -22,7 +25,7 @@ export const SocialMedia = () => {
             <IconButton
                 edge="end"
                 aria-haspopup="true"
-                href={'https://www.reddit.com/user/soniasdev'}
+                href={'https://www.reddit.com'}
                 color="inherit"
             >
                 <FacebookAccountCircle />
@@ -40,7 +43,7 @@ export const SocialMedia = () => {
             <IconButton
                 edge="end"
                 aria-haspopup="true"
-                href={" https://www.youtube.com/channel/UCH6JAh8ugccQGOxRsbztSdA/"}
+                href={" https://www.youtube.com/"}
                 color="inherit"
             >
                 <YouTubeAccountCircle />

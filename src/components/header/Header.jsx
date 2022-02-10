@@ -59,11 +59,12 @@ export const Header = () => {
                 vertical: "top",
                 horizontal: "left"
               }}
-              open={Boolean(anchorElNav)}
+              // open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" }
               }}
+              // divider={true}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
