@@ -21,7 +21,7 @@ export function Welcome() {
 
                 }}
             >
-                <img src='pexels-akil-mazumder-1072824-small.jpg' />
+                <img src='pexels-akil-mazumder-1072824-small.jpg' alt='my alt text' />
             </Box>
 
             <Box
@@ -32,11 +32,13 @@ export function Welcome() {
 
                 }}
             >
-                <img src='pexels-akil-mazumder-1072824-small.jpg' style={{
-                    margin: 'auto',
-                    width: '100%',
-                    height: '100%'
-                }} />
+                <img src='pexels-akil-mazumder-1072824-small.jpg'
+                    alt='lkfdsjlk'
+                    style={{
+                        margin: 'auto',
+                        width: '100%',
+                        height: '100%'
+                    }} />
             </Box>
 
             <h2>Quienes somos?</h2>
