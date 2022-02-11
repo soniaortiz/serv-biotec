@@ -1,4 +1,5 @@
 import React from 'react';
+import { Welcome } from '../welcome/Welcome';
 
 export function MainBody() {
     return (
@@ -12,7 +13,7 @@ export function MainBody() {
 
         >
 
-            body
+            <Welcome  />
         </div>
     )
 }
