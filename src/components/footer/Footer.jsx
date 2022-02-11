@@ -16,9 +16,7 @@ export function Footer() {
             <Box
                 bgcolor='text.secondary'
                 color='white'
-                height='300px'
             >
-
                 <Container
                     maxWidth="sm"
                 >
@@ -52,16 +50,6 @@ export function Footer() {
                                     <PhoneIcon />
                                 </ListItemIcon>
                                 <ListItemText primary={'Tel: (+52) 666-666-7689'} />
-                            </ListItem>
-
-
-                            <ListItem
-                                key={1}
-                            >
-                                <ListItemIcon>
-                                    <PhoneIcon />
-                                </ListItemIcon>
-                                <ListItemText primary={'Fax: (+52) 666-666-7689'} />
                             </ListItem>
 
                             <ListItem
