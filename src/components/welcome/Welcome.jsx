@@ -49,7 +49,8 @@ export function Welcome() {
           component="h3"
           sx={{
             paddingTop: "25%",
-            paddingBottom: "25%"
+            paddingBottom: "25%",
+            display: { xs: "flex", md: "none" }
           }}
         >
           Servicios Biotecnológicos del Guadiana S.A de C.V
