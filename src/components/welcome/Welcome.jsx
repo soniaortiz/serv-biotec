@@ -40,7 +40,10 @@ export function Welcome() {
       <Box
         sx={{
           mr: 2,
-          display: { lg: "none", md: "none" }
+          display: {
+            lg: "none",
+            md: "none"
+          }
           //   backgroundColor: "red"
         }}
       >
@@ -48,8 +51,8 @@ export function Welcome() {
           variant="h3"
           component="h3"
           sx={{
-            paddingTop: "25%",
-            paddingBottom: "25%",
+            paddingTop: "5%",
+            paddingBottom: "5%",
             display: { xs: "flex", md: "none" }
           }}
         >
