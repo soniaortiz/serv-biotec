@@ -10,17 +10,19 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Productos", "Servicios", "Nosotros", "Blog"];
+const pages = [
+  { name: "Productos", url: "productos" },
+  { name: "Servicios", url: "servicios" },
+  { name: "Nosotros", url: "nosotros" },
+  { name: "Blog", url: "blog" }
+];
 
 export const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = React.useState(() => false);
 
   const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+    console.log("###########");
+    setAnchorElNav(() => !anchorElNav);
   };
 
   return (
@@ -54,7 +56,7 @@ export const Header = () => {
             </IconButton>
             <Menu
               id="menu-appbar"
-              anchorEl={anchorElNav}
+              // anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "left"
@@ -64,17 +66,18 @@ export const Header = () => {
                 vertical: "top",
                 horizontal: "left"
               }}
-              // open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              open={Boolean(anchorElNav)}
+              // onClose={handleCloseNavMenu}
+              onClick={handleOpenNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
                 width: "40"
               }}
-              // divider={true}
+              divider={true}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} href={page.url}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -97,8 +100,9 @@ export const Header = () => {
           >
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.url}
+                href={page.url}
+                // onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
                   color: "white",
@@ -106,7 +110,7 @@ export const Header = () => {
                   width: "25%"
                 }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>

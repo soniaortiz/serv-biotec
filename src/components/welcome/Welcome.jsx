@@ -63,8 +63,8 @@ export function Welcome() {
           alt="lkfdsjlk"
           style={{
             // margin: "auto",
-            width: "100%",
-            height: "100%"
+            width: "80%",
+            height: "80%"
             // padding: "5%",
             // border: "solid"
           }}

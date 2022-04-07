@@ -1,10 +1,12 @@
 import "./App.css";
-import { Header } from "./components/header/Header";
 import theme from "./theme";
-import { ThemeProvider } from "@mui/material/styles";
-import { Footer } from "./components/footer/Footer";
 import { MainBody } from "./components/mainBody/MainBody";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { Header } from "./components/header/Header";
+import { ThemeProvider } from "@mui/material/styles";
+import { Footer } from "./components/footer/Footer";
+import { Gallery } from "./components/gallery/Gallery";
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<MainBody />} />
+            <Route path="/blog" element={<Gallery />} />
           </Routes>
         </BrowserRouter>
         <Footer />
