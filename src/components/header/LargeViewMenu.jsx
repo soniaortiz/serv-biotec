@@ -1,6 +1,5 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { pages } from './pages';
 import { HeaderLogo } from "./HeaderLogo";
@@ -19,7 +18,6 @@ export const LargeViewMenu = () => {
                     <Button
                         key={page.url}
                         href={page.url}
-                        // onClick={handleCloseNavMenu}
                         sx={{
                             my: 2,
                             color: "white",
