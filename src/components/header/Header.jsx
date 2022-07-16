@@ -35,7 +35,7 @@ export const Header = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            LOGO2
+            <a href="/">LOGO2</a>
           </Typography>
 
           <Box
@@ -56,7 +56,6 @@ export const Header = () => {
             </IconButton>
             <Menu
               id="menu-appbar"
-              // anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "left"
@@ -94,8 +93,6 @@ export const Header = () => {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" }
-              // color: "red",
-              // border: "solid"
             }}
           >
             {pages.map((page) => (

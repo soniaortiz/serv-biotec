@@ -22,7 +22,6 @@ function App() {
             <Route path="/productos" element={<MainBody />}/>
             <Route path="/servicios" element={<MainBody />}/>
             <Route path="/nosotros" element={<MainBody />}/>
-
           </Routes>
         </BrowserRouter>
         <Footer />

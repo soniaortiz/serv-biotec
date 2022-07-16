@@ -49,7 +49,7 @@ export function Footer() {
                                 <ListItemIcon>
                                     <PhoneIcon />
                                 </ListItemIcon>
-                                <ListItemText primary={'Tel: (+52) 666-666-7689'} />
+                                <ListItemText primary={'(+52) 666-666-7689'} />
                             </ListItem>
 
                             <ListItem
@@ -58,7 +58,7 @@ export function Footer() {
                                 <ListItemIcon>
                                     <MailIcon />
                                 </ListItemIcon>
-                                <ListItemText primary={'email: email.contacto@name.com'} />
+                                <ListItemText primary={'email.contacto@name.com'} />
                             </ListItem>
 
                         </List>
