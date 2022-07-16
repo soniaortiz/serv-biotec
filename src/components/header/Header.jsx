@@ -35,7 +35,7 @@ export const Header = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            <a href="/">LOGO22</a>
+            <a href="/">LOGO2</a>
           </Typography>
 
           <Box
