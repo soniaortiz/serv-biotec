@@ -15,11 +15,13 @@ export const SmallViewMenu = () => {
     setAnchorElNav(() => !openedMenu);
   };
 
+  const menuItemLength = `${(100/pages.length)}%`;
+
   return (
     <Box
       sx={{
         flexGrow: 1,
-        display: { xs: "flex", md: "none" }
+        display: { xs: "flex", md: "none" },
       }}
     >
       <IconButton
@@ -36,7 +38,7 @@ export const SmallViewMenu = () => {
       <Menu
         id="menu-appbar"
         anchorOrigin={{
-          vertical: "bottom",
+          // vertical: "bottom",
           horizontal: "left"
         }}
         keepMounted
@@ -46,13 +48,30 @@ export const SmallViewMenu = () => {
         }}
         open={Boolean(openedMenu)}
         sx={{
-          display: { xs: "block", md: "none" },
-          width: "40"
+          display: { xs: "block", md: "none" }
         }}
         divider={true}
+
+        PaperProps={{
+          style: {
+            // height: '100%',
+            // maxHeight: `{48 * 4.5}px`,
+            width: '100%',
+          },
+        }}
       >
         {pages.map((page) => (
-          <Button href={page.url}>
+          <Button href={page.url}  
+          sx={
+            {
+              display: { 
+                xs: "block", 
+                md: "none" 
+              },
+              width: '100%',
+              height: menuItemLength
+            }
+          }>
             <MenuItem key={page.name} >
               <Typography textAlign="center">{page.name}</Typography>
             </MenuItem>
