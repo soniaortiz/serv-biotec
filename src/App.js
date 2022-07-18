@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Footer } from "./components/footer/Footer";
 import { Gallery } from "./components/gallery/Gallery";
 import { Welcome } from './components/welcome/Welcome';
+import { Nosotros } from './components/nosotros/Nosotros';
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
             <Route path="/blog" element={<Gallery />}/>
             <Route path="/productos" element={<Gallery />}/>
             <Route path="/servicios" element={<Gallery />}/>
-            <Route path="/nosotros" element={<Gallery />}/>
+            <Route path="/nosotros" element={<Nosotros />}/>
           </Routes>
         </BrowserRouter>
         </div>

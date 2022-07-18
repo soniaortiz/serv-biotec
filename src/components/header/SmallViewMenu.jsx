@@ -68,8 +68,7 @@ export const SmallViewMenu = () => {
                 xs: "block", 
                 md: "none" 
               },
-              width: '100%',
-              height: menuItemLength
+              width: '100%'
             }
           }>
             <MenuItem key={page.name} >
