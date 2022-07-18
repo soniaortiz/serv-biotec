@@ -5,7 +5,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 export const Product = ({name, src, desc}) => {
     return (
-        <ImageListItem key={1*Math.random(200)}>
+        <ImageListItem key={1*Math.random(200)} sx={{margin: '10px'}}>
             <img
                 src={src}
                 srcSet={src}
