@@ -12,14 +12,15 @@ export function Gallery() {
         width: '100%',
         height: '100%'
       }}
+      onClick={({target})=>{console.log('??????', target)}}
     >
       <ImageListItem key="subheader" cols={2}>
-        <ListSubheader>December</ListSubheader>
+        <ListSubheader>Catálago de Productos</ListSubheader>
       </ImageListItem>
       <>
        { 
-       listaDeProductos.map(({nombre, src, desc})=>{
-        return <Product name={nombre} src={src} desc = {desc}/>;
+       listaDeProductos.map(({nombre, src, desc}, index)=>{
+        return <Product name={nombre} src={src} desc = {desc} key={index}/>;
        })
        }
 

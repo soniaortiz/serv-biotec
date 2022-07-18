@@ -14,7 +14,9 @@ export const LargeViewMenu = () => {
                     display: { xs: "none", md: "flex" }
                 }}
             >
-                {pages.map((page) => (
+                {pages.map((page) => {
+                    console.log('@@@@@@@@@@@@@@', page)
+                    return (
                     <Button
                         key={page.url}
                         href={page.url}
@@ -27,7 +29,7 @@ export const LargeViewMenu = () => {
                     >
                         {page.name}
                     </Button>
-                ))}
+                )})}
             </Box>
         </>
 
