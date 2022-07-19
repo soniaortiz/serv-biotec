@@ -19,8 +19,8 @@ export function Gallery() {
       </ImageListItem>
       <>
        { 
-       listaDeProductos.map(({nombre, src, desc}, index)=>{
-        return <Product name={nombre} src={src} desc = {desc} key={index}/>;
+       listaDeProductos.map(({nombre, src, desc, path}, index)=>{
+        return <Product name={nombre} src={src} desc = {desc} key={index} path={path}/>;
        })
        }
 

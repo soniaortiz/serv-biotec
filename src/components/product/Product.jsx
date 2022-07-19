@@ -3,14 +3,15 @@ import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import ImageListItem from "@mui/material/ImageListItem";
 
-export const Product = ({name, src, desc}) => {
+export const Product = ({name, src, desc, path}) => {
     return (
-        <ImageListItem key={1*Math.random(200)} sx={{margin: '10px'}}>
+        <ImageListItem key={path} sx={{margin: '10px'}}>
             <img
                 src={src}
                 srcSet={src}
                 alt={name}
                 loading="lazy"
+                id={path}
             />
             <ImageListItemBar
                 title={name}
