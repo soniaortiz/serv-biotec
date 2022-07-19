@@ -24,7 +24,6 @@ function App() {
             <BrowserRouter>
           <Routes>
             <Route path="/" element={<Welcome/>} />
-            <Route path="hello-page" element={<div>SONIA</div> }/>
             <Route path="nuestros-productos" element={<Gallery />}/>
             <Route path="blog" element={<Gallery />}/>
             <Route path="servicios" element={<Gallery />}/>
