@@ -24,10 +24,11 @@ function App() {
             <BrowserRouter>
           <Routes>
             <Route path="/" element={<Welcome/>} />
-            <Route path="/nuestros-productos" element={<Gallery />}/>
-            <Route path="/blog" element={<Gallery />}/>
-            <Route path="/servicios" element={<Gallery />}/>
-            <Route path="/nosotros" element={<Nosotros />}/>
+            <Route path="hello-page" element={<div>SONIA</div> }/>
+            <Route path="nuestros-productos" element={<Gallery />}/>
+            <Route path="blog" element={<Gallery />}/>
+            <Route path="servicios" element={<Gallery />}/>
+            <Route path="nosotros" element={<Nosotros />}/>
           </Routes>
         </BrowserRouter>
         </div>
