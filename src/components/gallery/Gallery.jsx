@@ -12,7 +12,14 @@ export function Gallery() {
         width: '100%',
         height: '100%'
       }}
-      onClick={({target})=>{console.log('??????', target)}}
+      onClick={({target})=>{
+        console.log('??????', target.className)
+        if( target.className === 'MuiImageListItem-img'){
+          window.location.href =  `${window.location.href}/${target.id}`;
+        }
+      }
+        
+      }
     >
       <ImageListItem key="subheader" cols={2}>
         <ListSubheader>Catálago de Productos</ListSubheader>

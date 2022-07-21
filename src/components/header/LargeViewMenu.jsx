@@ -3,7 +3,12 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { pages } from './pages';
 import { HeaderLogo } from "./HeaderLogo";
+
 export const LargeViewMenu = () => {
+    function changePath({target}){
+        window.location.replace(`/${target.id}`)
+       
+    }
 
     return (
         <>
@@ -15,11 +20,12 @@ export const LargeViewMenu = () => {
                 }}
             >
                 {pages.map((page) => {
-                    console.log('@@@@@@@@@@@@@@', page)
                     return (
                     <Button
                         key={page.url}
-                        href={page.url}
+                        // href={page.url}
+                        id={page.url}
+                        onClick={changePath}
                         sx={{
                             my: 2,
                             color: "white",
