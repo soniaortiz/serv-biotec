@@ -15,7 +15,11 @@ export const SmallViewMenu = () => {
     setAnchorElNav(() => !openedMenu);
   };
 
-  const menuItemLength = `${(100/pages.length)}%`;
+  function changePath({ target }) {
+    window.location.replace(`/${target.id}`);
+  }
+
+  // const menuItemLength = `${(100/pages.length)}%`;
 
   return (
     <Box
@@ -61,21 +65,23 @@ export const SmallViewMenu = () => {
         }}
       >
         {pages.map((page) => (
-          <Button href={page.url}  
-          sx={
-            {
-              display: { 
-                xs: "block", 
-                md: "none" 
-              },
-              width: '100%'
+            <MenuItem
+            key={page.name}
+            id={page.url}
+            onClick={changePath}
+            sx={
+              {
+                display: {
+                  xs: "block",
+                  md: "none"
+                },
+                width: '100%'
+              }
             }
-          }>
-            <MenuItem key={page.name} >
-              <Typography textAlign="center">{page.name}</Typography>
+            >
+              {/* <Typography textAlign="center">{page.name}</Typography> */}
+              {page.name}
             </MenuItem>
-          </Button>
-
         ))}
       </Menu>
     </Box>
